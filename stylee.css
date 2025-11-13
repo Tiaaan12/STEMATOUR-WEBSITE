@@ -1,0 +1,695 @@
+body {
+  margin:0px;
+  
+}
+#navbar{
+    height:120px;
+    background-color:white;
+    align-items: center;
+    display: flex;
+    margin-top: -40px;
+}
+
+.logo-section img {
+  
+  margin-right: -5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* optional for circle */
+}
+.logo-section{
+   display: flex;
+   align-items: center;
+}
+
+
+
+#logo-text {
+ 
+  margin: 0; 
+  line-height: 1;
+}
+
+#logo-text h1 {
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial Black, sans-serif;
+}
+
+
+#logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #000;
+}
+
+#image {
+    margin-top:20px;
+    width:100%;
+    height:700px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+}
+.vid {
+    margin-top:-10px;
+    width:1290px;
+    height:650px;
+     position: relative;
+    left:-20px;
+    
+}
+.welcome{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  
+}
+
+#welcome-img{
+   position: relative;
+  width: fit-content; 
+  max-width: 695px;
+   max-height: 600px;
+
+  
+}
+#behind-text {
+  position: absolute;
+  top: 40%;
+  color: white;
+  
+}
+
+#behind-text h1 {
+  font-size: 60px;
+  margin-left:100px;
+  margin-bottom: -20px;
+}
+
+#behind-text pre {
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+
+.welcome img {
+  width: 695px;
+  height: 600px;
+  
+}
+
+
+#welcome-text {
+  
+  margin-left: 90px;
+  font-size: 20px;
+  
+  
+}
+
+#p1{
+ align-items: center;
+ margin-top: 70px;
+ margin-left: -40px;
+}
+
+#p2 {
+  margin-top: 100px;
+   margin-left: 70px;
+}
+
+
+#contact {
+  margin-top: 50px;
+  margin-left: 130px;
+  background-color: orangered;
+  color: white;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+}
+
+.welcome h1 {
+  margin-top: -50px;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+
+.links > * {
+    margin-right: 25px;
+    position:relative;
+    left:500px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif black;
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+
+#notif {
+    top:6px;
+    width:25px;
+    margin-right: 2px;
+}
+
+#picture {
+  
+  top: 6px;
+  width: 23px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+#img {
+  
+}
+#chat-box {
+  margin-top: 20px;
+  background-color: orangered;
+  width: 170px;
+  height: 50px;
+  position:fixed;
+  right: 30px;
+  bottom: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: -10px;
+  
+  
+  
+}
+#chat-box p {
+  color:white;
+  position: fixed;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+#chat-box .fa-solid.fa-message {
+  font-size: 25px;
+  margin-left:20px;
+}
+
+
+.option {
+  width:15px;
+  border:none;
+  background-color: transparent;
+  cursor:pointer;
+    font-size: 15px;  
+  outline: none; 
+}
+
+#social-media > * {
+  align-items: center;
+  position: relative;
+  top:2px;
+  left:1090px;
+  margin-right: 2px;
+  
+  
+}
+
+#social-media a{
+  text-decoration: none;
+}
+
+#instagram {
+  width: 25px;
+}
+
+#facebook {
+  width: 25px;
+}
+
+#twitter {
+  width: 25px;
+}
+
+#youtube {
+  width: 25px;
+
+}
+
+#beach {
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beaches {
+  border-radius: 50%;
+  height: 370px;
+  width: 370px;
+ object-fit: cover;
+ cursor: pointer;
+ border: 2px solid white;
+ 
+}
+
+#list{
+  height: 50%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   margin: 0px;
+   padding: 0px; 
+   
+
+}
+
+
+
+#footer {
+  width: 100%;
+  height: 500px;
+}
+
+.footer-logo img {
+  
+  margin-right: -5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* optional for circle */
+}
+
+#footer-section{
+   display: flex;
+   align-items: center;
+   margin-top:20px;
+   margin-left: 90px;
+
+}
+#text {
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+#text pre {
+  font-size: 15px;
+}
+
+#text p {
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
+#lenk {
+    margin-left: 700px;
+    margin-top: -225px;
+    display: flex;
+    gap: 10px;
+}
+
+#first-lenk {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ 
+}
+#second-lenk {
+   display: flex;
+  flex-direction: column;
+  gap: 5px;
+ 
+}
+
+
+
+#first-lenk a {
+    font-family: Arial, Helvetica, sans-serif black;
+    color: black;
+    text-decoration: none;
+}
+
+#second-lenk a {
+    font-family: Arial, Helvetica, sans-serif black;
+    color: black;
+   
+}
+
+#book-button {
+  margin-left: 180px;
+}
+
+#book-button button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(8, 32, 8);
+  color:white;
+  border:none;
+}
+
+#Choleng {
+  width: 100%;
+  height:750px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  
+ 
+
+}
+
+#Choleng img {
+  width:100%;
+  height:100%;
+ 
+
+  
+}
+.background {
+   filter: blur(5px) brightness(60%);
+}
+
+#dona {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+   margin: 0px;
+  padding:0px;
+  width: 100%;
+  margin-top: -150px;
+  
+   
+
+   
+  
+}
+#dona h1 {
+
+  font-size: 50px;
+  
+}
+
+#dona pre {
+     text-shadow: 2px 2px 8px black;
+     font-size: 17px;
+}
+
+
+#dona img {
+  width: 700px;
+  
+}
+#background-choleng {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  position:relative;
+  color:white;
+ 
+
+  
+}
+#background-img {
+  width:100%;
+  height: 2300px;
+  filter:blur(5px) brightness(60%)
+}
+
+#head-text{
+  position:absolute;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+#head-text h1 {
+  text-shadow: 2px 2px 8px black;
+  font-size: 80px;
+}
+#head-text p {
+    margin-top: -30px;
+     font-size: 25px;
+     
+}
+#Bali-hut img {
+  width: 50%;
+  height: 600px;
+  float: left;
+
+}
+#Bali-hut {
+  width: 90%;
+  position: absolute;
+  margin-top: 240px;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+#bali {
+  margin-bottom: 100px;
+}
+#Bali-rooms {
+    margin-bottom: 100px;
+}
+#Bali-hut h1 {
+   text-shadow: 2px 2px 8px black;
+  font-size: 80px;
+}
+
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+ 
+}
+
+.texts pre {
+  font-size: 17px;
+  text-shadow: 2px 2px 8px black;
+  
+}
+
+.links a:hover:not(.active) {
+  color: tomato;
+}
+
+.links a.active {
+   color: rgb(8, 32, 8);
+}
+#beach-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.backbeach {
+  width: 100%;
+  height: 1200px;
+  z-index: 0;
+}
+
+#beach-container {
+  position: absolute;
+  background-color: rgba(212, 184, 184, 0.568);
+  width: 90%;
+  height: 85%;
+  z-index: 1;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+                                                                                      
+  
+}
+
+#beach-container img {
+  width: 350px;
+  height: 400px;
+}
+
+#learn-more {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+#media-con {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#media-container{
+  width: 85%;
+  height: 750px;
+   background-color: rgb(8, 32, 8);
+   text-align: center;
+ 
+}
+
+#media-container h1 {
+   text-shadow: 2px 2px 8px black;
+  font-size: 50px;
+  color: white;
+}
+
+#media-container ul{
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  
+}
+
+
+.media {
+  width: 320px;
+  height: 550px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.media img {
+  width: 320px;
+  height: 250px;
+}
+
+#pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+#pic-container {
+ display: flex;
+ flex-direction: row;
+margin-top: 20px;
+padding: 10px;
+width: 280px;
+
+ 
+}
+
+#pic-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  line-height: 1px;
+  }
+
+  #pic-text h6{
+    margin: 5px;
+    color: black;
+  }
+
+  #quote {
+    display: flex;
+    width: 280px;
+    margin-top: -20px;
+    padding: 10px;
+    
+    
+  }
+
+  #qoute-text {
+    display: flex;
+    width: 280px;
+    margin-top: -30px;
+    margin-left: -10px;
+  }
+
+  #resto-container {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+  }
+
+    #resto-container img {
+    width:100%;
+    height: 1300px;
+  }
+
+  #luto-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    position: absolute;
+    color:white;
+    width: 50%;
+   
+    
+    
+  }
+#luto-text h1 {
+  text-shadow: 2px 2px 8px black;
+  font-size: 50px;
+  color: white;
+ 
+}
+#luto-text pre {
+  text-shadow: 2px 2px 8px black;
+  font-size: 20px;
+  color: white;
+}
+
+#luto-box {
+  position: absolute;
+  top:400px;
+  width: 80%;
+  height: 400px;
+  background-color: rgba(212, 184, 184, 0.568);
+}
+
+#luto-box ul{
+  height: 400px;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
