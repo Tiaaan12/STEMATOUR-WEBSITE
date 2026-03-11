@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMCI — Advance Matrix Construction Incorporated</title>
+  <meta name="description" content="Advance Matrix Construction Incorporated — Civil engineering and general contracting. Projects, services, and contact information.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand-orange: #ff6600;
+      --dark: #111827;
+      --muted: #6b7280;
+      --max-width: 1150px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Segoe UI,Arial;line-height:1.5;color:var(--dark);margin:0;background:#fff}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+
+    /* NAV */
+    header{background:#fff;position:sticky;top:0;z-index:40;border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:64px;width:auto;border-radius:6px;background:transparent}
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    nav li{font-weight:600}
+    .cta{background:var(--brand-orange);color:#fff;padding:8px 14px;border-radius:6px;font-weight:700}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:56px 0}
+    .hero-left h2{font-size:34px;margin:0 0 12px;color:var(--dark)}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .hero .buttons{display:flex;gap:12px}
+    .btn-outline{border:2px solid var(--brand-orange);padding:10px 14px;border-radius:8px;font-weight:700}
+    .hero-right{background:linear-gradient(180deg, rgba(255,102,0,0.1), rgba(255,102,0,0.04));padding:18px;border-radius:10px}
+    .contact-card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+    .contact-card h3{margin:0 0 6px}
+    .muted{color:var(--muted);font-weight:600}
+
+    /* SERVICES */
+    .services{padding:36px 0}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(17,24,39,0.04)}
+    .card h4{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted)}
+
+    /* PROJECTS */
+    .project {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+    .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+    .project{height:180px;border-radius:8px;background:#f3f4f6;display:flex;align-items:flex-end;padding:12px;color:#fff;font-weight:700;background-size:cover;background-position:center}
+
+    /* ABOUT */
+    .about{display:flex;gap:30px;align-items:center;padding:36px 0}
+    .about img{width:420px;border-radius:10px}
+
+    /* CONTACT */
+    .contact{padding:36px 0}
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+    form{display:grid;gap:12px}
+    input,textarea{padding:10px;border:1px solid #e5e7eb;border-radius:8px;font-family:inherit}
+    button[type=submit]{background:var(--brand-orange);color:#fff;padding:10px 12px;border:none;border-radius:8px;font-weight:700}
+
+    /* FOOTER */
+    footer{background:#0f1724;color:#f8fafc;padding:28px 0;margin-top:30px}
+    .footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+
+    /* RESPONSIVE */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr;}
+      .container{padding:0 16px}
+      .services-grid,.projects-grid{grid-template-columns:repeat(2,1fr)}
+      .about{flex-direction:column}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      nav ul{display:none}
+      .brand h1{font-size:16px}
+      .services-grid,.projects-grid{grid-template-columns:1fr}
+      .brand img{height:56px}
+      .hero-left h2{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Replace `logo.png` with your logo file (recommended size 200x200) -->
+        <img src="/images/amci.jpg" alt="AMCI logo" onerror="this.style.display='none'">
+        <div>
+          <h1>AMCI</h1>
+          <div style="font-size:12px;color:var(--muted);font-weight:600">Advance Matrix Construction Incorporated</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta" href="#contact">Request Quote</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2>Building reliable infrastructure and lasting partnerships</h2>
+        <p>Advance Matrix Construction Incorporated (AMCI) is a civil engineering and general contracting company specializing in structural works, interior fit-outs, and commercial construction across the Philippines.</p>
+        <div class="buttons">
+          <a class="cta" href="#projects">View Projects</a>
+          <a class="btn-outline" href="#services">Our Services</a>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="contact-card">
+          <h3>Contact</h3>
+          <div class="muted">#26 Tulip Street, Roxas District, Quezon City</div>
+          <div style="margin-top:8px;font-weight:700">Tel: 376-6914</div>
+          <div style="font-size:13px;color:var(--muted)">Fax: (02) 376-4810 • Email: <a href="mailto:amci_0714@yahoo.com">amci_0714@yahoo.com</a></div>
+          <div style="margin-top:12px"><strong>Services:</strong> General Contractor / Interior Fit-Out Contractor</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" class="services">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+        <h3>Our Services</h3>
+        <div style="color:var(--muted);font-weight:600">Professional civil engineering and contracting</div>
+      </div>
+      <div class="services-grid">
+        <div class="card">
+          <h4>Civil Construction</h4>
+          <p>Structural works for commercial and industrial buildings, roadworks, and infrastructure projects.</p>
+        </div>
+        <div class="card">
+          <h4>Project Management</h4>
+          <p>End-to-end project management, scheduling, and site supervision to deliver projects on time.</p>
+        </div>
+        <div class="card">
+          <h4>Interior Fit-Out</h4>
+          <p>Professional interior fit-outs for offices, retail, and corporate spaces with attention to detail.</p>
+        </div>
+      </div>
+    </section>
+
+        <section id="projects" class="projects">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <h3>Featured Projects</h3>
+        <div style="color:var(--muted);font-weight:600">Highlights from our portfolio</div>
+      </div>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="images/hapchan.jpg" alt="Project A" />
+          <p>Project A — Mall Extension</p>
+        </div>
+        <div class="project">
+          <img src="/images/mary-grac.jpg" alt="Project B" />
+          <p>Project B — Office Tower</p>
+        </div>
+        <div class="project">
+          <img src="images/shake.shack.jpg" alt="Project C" />
+          <p>Project C — Warehouse</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <h3>About AMCI</h3>
+        <p style="color:var(--muted)">Advance Matrix Construction Incorporated (AMCI) has been providing civil engineering and contracting services with a focus on quality, safety, and timely delivery. We combine experienced project teams with modern construction techniques to meet client requirements and regulatory standards.</p>
+
+        <h4 style="margin-top:18px">Mission</h4>
+        <p style="color:var(--muted)">To deliver high-quality construction solutions that empower communities and businesses through durable infrastructure.</p>
+
+        <h4 style="margin-top:14px">Vision</h4>
+        <p style="color:var(--muted)">To be a trusted leader in civil construction in the Philippines.</p>
+      </div>
+      <img src="construction.jpg" alt="construction site sample">
+    </section>
+
+    <section id="contact" class="contact">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <h3>Contact Us</h3>
+        <div style="color:var(--muted);font-weight:600">Get a quote or ask about our services</div>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <input type="text" name="company" placeholder="Company (optional)">
+            <textarea name="message" rows="6" placeholder="Project details or message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <aside class="hero-right">
+          <div class="contact-card">
+            <h4>Office</h4>
+            <div class="muted">#26 Tulip Street, Roxas District, Quezon City 1105</div>
+            <div style="margin-top:8px;font-weight:700">Tel: 376-6914</div>
+            <div style="font-size:13px;color:var(--muted)">Fax: (02) 376-4810</div>
+            <div style="margin-top:12px">Email: <a href="mailto:amci_0714@yahoo.com">amci_0714@yahoo.com</a></div>
+            <div style="margin-top:12px">Facebook: <a href="https://facebook.com" target="_blank">AMCI Facebook Page</a></div>
+          </div>
+
+          <div style="margin-top:14px;background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(17,24,39,0.05)">
+            <!-- Replace the iframe src with your Google Maps embed link -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18" width="100%" height="180" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="margin:0 0 8px">AMCI</h4>
+          <div style="color:#cbd5e1;max-width:420px">Advance Matrix Construction Incorporated — General Contractor and Interior Fit-Out Contractor. #26 Tulip Street, Roxas District, Quezon City, Philippines 1105.</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-weight:700">Tel: 376-6914</div>
+          <div style="color:#cbd5e1">Fax: (02) 376-4810</div>
+          <div style="color:#cbd5e1;margin-top:8px">Email: <a href="mailto:amci_0714@yahoo.com" style="color:#fff">amci_0714@yahoo.com</a></div>
+        </div>
+      </div>
+      <div style="text-align:center;color:#94a3b8;margin-top:18px;font-size:13px">© <span id="year"></span> Advance Matrix Construction Incorporated. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
