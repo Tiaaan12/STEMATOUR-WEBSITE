@@ -1,6 +1,6 @@
 (function () {
   const page = document.body.dataset.page;
-  const MAKE_BOOKING_WEBHOOK_URL = "";
+  const MAKE_BOOKING_WEBHOOK_URL = "https://hook.eu1.make.com/mvffemfs03p78ibr7aae55vnn68xq1tm";
 
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = new Date().getFullYear();
