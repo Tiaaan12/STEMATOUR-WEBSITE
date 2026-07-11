@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="More STEMATOUR details, booking request, and references.">
+  <title>More | STEMATOUR</title>
+  <link rel="icon" href="../assets/images/NU.jpg">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/473c509a88.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="more">
+  <header class="site-header">
+    <div class="social-bar"><a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="../assets/images/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png" alt="Instagram"></a><a href="https://www.facebook.com/christian.devera.776795" target="_blank" rel="noreferrer"><img src="../assets/images/facebook.png" alt="Facebook"></a><a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="../assets/images/twitter.png" alt="Twitter"></a><a href="https://youtube.com" target="_blank" rel="noreferrer"><img src="../assets/images/youtube.png" alt="YouTube"></a></div>
+    <nav class="navbar"><a class="brand" href="../index.html"><img src="../assets/images/INNSYNCH (120 x 120 px).png" alt="STEMATOUR logo"><span><strong>STEMATOUR</strong><small>Mauban Tours</small></span></a><button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">Menu</button><div class="nav-links"><a href="../index.html" data-nav="home">Home</a><a href="restaurant.html" data-nav="restaurant">Restaurant</a><a href="parks.html" data-nav="parks">Parks</a><a href="beach.html" data-nav="beach">Beach</a><a href="guides.html" data-nav="guides">Guides</a><a href="more.html" data-nav="more">More</a><button class="icon-button" type="button" data-notify aria-label="Show notifications"><img src="../assets/images/notif.png" alt=""></button><img class="avatar" src="../assets/images/christian.jpg" alt="Profile photo"><select class="account-menu" aria-label="Account menu"><option value="">Account</option><option>Profile</option><option>My Subscription</option><option>My Account</option><option>Log Out</option></select></div></nav>
+  </header>
+  <main>
+    <section class="simple-hero">
+      <img src="../assets/images/backgroundBeach.png" alt="Mauban beach background">
+      <div><h1>More From STEMATOUR</h1><p>Send a booking request, ask a question, or review the site references.</p></div>
+    </section>
+    <section class="form-section booking-page-section" id="booking">
+      <form class="booking-form" data-booking-form>
+        <h2>Booking Request</h2>
+        <input type="hidden" name="source" value="More page booking form">
+        <label>Full Name<input type="text" name="fullName" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required></label>
+        <label>Destination<select name="destination" required><option value="">Choose one</option><option>Beach Tour</option><option>Parks and Nature</option><option>Restaurant/Food Trip</option><option>Tourist Guide Team</option><option>Custom Tour</option></select></label>
+        <label>Preferred Date<input type="date" name="preferredDate" required></label>
+        <label>Preferred Time<input type="time" name="preferredTime" required></label>
+        <label>Number of Guests<input type="number" name="guests" min="1" max="60" value="1" required></label>
+        <label>Pickup / Meeting Place<input type="text" name="meetingPlace" placeholder="Example: Mauban town proper" required></label>
+        <label class="full-field">Special Requests<textarea name="message" rows="5" placeholder="Tell us about your plan, budget, accessibility needs, or questions."></textarea></label>
+        <label class="checkbox-field full-field"><input type="checkbox" name="consent" value="yes" required><span>I agree to share my booking details with STEMATOUR for tour coordination.</span></label>
+        <button class="primary-button" type="submit">Send Request</button>
+      </form>
+      <aside id="references">
+        <h2>What Happens Next</h2>
+        <p>Your booking request can be sent to Make, then Make can create a new record in Airtable for your team.</p>
+        <p>Recommended Airtable fields: full name, email, phone, destination, preferred date, preferred time, guests, meeting place, message, source, page URL, and created date.</p>
+        <p id="references">Images and materials are local project assets stored in <code>assets/images</code> and <code>assets/media</code>.</p>
+      </aside>
+    </section>
+  </main>
+  <button class="chat-button" type="button" data-chat-toggle><i class="fa-solid fa-message"></i><span>Let's Chat!</span></button>
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="../assets/images/INNSYNCH (120 x 120 px).png" alt="STEMATOUR logo">
+      <span><strong>STEMATOUR</strong><small>Mauban Tours</small></span>
+    </div>
+    <p>A world that pushes people to their limits in discovering tons of locations and places.</p>
+    <nav aria-label="Footer links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#news">News</a>
+      <a href="#" data-open-contact>Contact</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="guides.html">Guides</a>
+      <a href="more.html#references">References</a>
+    </nav>
+    <button class="dark-button" type="button" data-book-now>Book Now</button>
+    <small>&copy; <span data-year></span> STEMATOUR. Powered by Christian Devera.</small>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

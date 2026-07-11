@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEMATOUR is a Mauban travel guide for beaches, food spots, parks, and local events.">
+  <title>STEMATOUR | Mauban Tours</title>
+  <link rel="icon" href="assets/images/NU.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/473c509a88.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="social-bar" aria-label="Social media links">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="assets/images/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/christian.devera.776795" target="_blank" rel="noreferrer"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://youtube.com" target="_blank" rel="noreferrer"><img src="assets/images/youtube.png" alt="YouTube"></a>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="assets/images/INNSYNCH (120 x 120 px).png" alt="STEMATOUR logo">
+        <span><strong>STEMATOUR</strong><small>Mauban Tours</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="pages/restaurant.html" data-nav="restaurant">Restaurant</a>
+        <a href="pages/parks.html" data-nav="parks">Parks</a>
+        <a href="pages/beach.html" data-nav="beach">Beach</a>
+        <a href="pages/guides.html" data-nav="guides">Guides</a>
+        <a href="pages/more.html" data-nav="more">More</a>
+        <button class="icon-button" type="button" data-notify aria-label="Show notifications"><img src="assets/images/notif.png" alt=""></button>
+        <img class="avatar" src="assets/images/christian.jpg" alt="Profile photo">
+        <select class="account-menu" aria-label="Account menu">
+          <option value="">Account</option>
+          <option value="profile">Profile</option>
+          <option value="subscription">My Subscription</option>
+          <option value="account">My Account</option>
+          <option value="logout">Log Out</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-media" aria-label="Mauban tour highlight">
+      <img src="assets/images/1000001506.jpg" alt="Mauban coastal scenery">
+      <video autoplay muted loop playsinline>
+        <source src="assets/media/The gat uban.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section class="welcome-section" id="about">
+      <div class="image-panel">
+        <img src="assets/images/welcome.jpg" alt="Welcome to Mauban">
+        <div class="image-caption">
+          <h1>STEMATOUR</h1>
+          <p>Discover the town of Mauban through captivating journeys beyond the ordinary.</p>
+        </div>
+      </div>
+      <div class="welcome-copy">
+        <h2>EXPLORE YOURSELF!</h2>
+        <p>Welcome to our tour website, where adventure awaits and dream destinations come alive.</p>
+        <button class="primary-button" type="button" data-open-contact>Contact</button>
+      </div>
+    </section>
+
+    <section class="circle-gallery" aria-label="Featured Mauban beaches">
+      <a href="pages/beach.html"><img src="assets/images/cagbalete.jpg" alt="Cagbalete beach"></a>
+      <a href="pages/beach.html"><img src="assets/images/Choleng.jpg" alt="Dona Choleng beach"></a>
+      <a href="pages/beach.html"><img src="assets/images/RockPool.jpg" alt="Rock pool beach"></a>
+    </section>
+
+    <section class="news-section" id="news">
+      <div class="section-shell">
+        <h2>STEMATOUR NEWS</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="assets/images/fiesta.jpg" alt="Mauban fiesta celebration">
+            <div class="card-author"><img src="assets/images/christian.jpg" alt=""><span>christian devera<br>July 22, 2025</span></div>
+            <h3>Mauban Fiesta</h3>
+            <p>Journey into joy: Mauban's July Fiesta, a delightful extravaganza awaits.</p>
+          </article>
+          <article class="news-card">
+            <img src="assets/images/bisbiss falls.jpg" alt="Bisabis Falls">
+            <div class="card-author"><img src="assets/images/christian.jpg" alt=""><span>christian devera<br>July 22, 2025</span></div>
+            <h3>Bisabis Falls</h3>
+            <p>Looking for a chasing-waterfalls experience in Mauban? Head to Polo.</p>
+          </article>
+          <article class="news-card">
+            <img src="assets/images/heheeheheh.webp" alt="Mauban woven craft">
+            <div class="card-author"><img src="assets/images/christian.jpg" alt=""><span>christian devera<br>July 22, 2025</span></div>
+            <h3>Mauban's Crafts</h3>
+            <p>Nilala are buri products intricately woven by Mauban women artisans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="chat-button" type="button" data-chat-toggle><i class="fa-solid fa-message"></i><span>Let's Chat!</span></button>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/images/INNSYNCH (120 x 120 px).png" alt="STEMATOUR logo">
+      <span><strong>STEMATOUR</strong><small>Mauban Tours</small></span>
+    </div>
+    <p>A world that pushes people to their limits in discovering tons of locations and places.</p>
+    <nav aria-label="Footer links">
+      <a href="#about">About</a>
+      <a href="index.html">Home</a>
+      <a href="#news">News</a>
+      <a href="#" data-open-contact>Contact</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="pages/guides.html">Guides</a>
+      <a href="pages/more.html#references">References</a>
+    </nav>
+    <button class="dark-button" type="button" data-book-now>Book Now</button>
+    <small>&copy; <span data-year></span> STEMATOUR. Powered by Christian Devera.</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
