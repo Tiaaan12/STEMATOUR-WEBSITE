@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 0;
 }
 
 body {
@@ -20,6 +21,8 @@ body {
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
+  min-width: 0;
+  overflow-x: hidden;
 }
 
 img,
@@ -48,11 +51,12 @@ a {
 
 .social-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 6px;
+  gap: 8px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4px 24px 0;
+  padding: 6px 24px 0;
 }
 
 .social-bar img {
@@ -64,12 +68,20 @@ a {
 .navbar {
   min-height: 104px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
   gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
 }
 
 .brand,
@@ -100,12 +112,6 @@ a {
 .footer-brand small {
   display: block;
   font-size: 12px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 18px;
 }
 
 .nav-links a {
@@ -253,12 +259,11 @@ a {
 
 .circle-gallery {
   background: var(--soft);
-  min-height: 550px;
   padding: 60px 24px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 370px));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
-  justify-content: space-evenly;
+  justify-items: center;
   gap: 30px;
 }
 
@@ -297,13 +302,13 @@ a {
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 320px));
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: stretch;
   gap: 28px;
 }
 
 .news-card {
-  min-height: 550px;
+  min-height: 420px;
   background: #ffffff;
   text-align: left;
 }
@@ -558,7 +563,7 @@ a {
 
 .detail-columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
