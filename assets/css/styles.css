@@ -11,10 +11,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
-  min-width: 0;
-  width: 100%;
 }
 
 body {
@@ -1236,6 +1241,85 @@ a {
 
   .site-footer .dark-button {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body,
+  header,
+  main,
+  footer,
+  section,
+  .site-header,
+  .navbar,
+  .nav-links,
+  .section-shell,
+  .services-content,
+  .restaurant-details,
+  .parks-details,
+  .team-section,
+  .guide-values,
+  .info-grid,
+  .form-section,
+  .site-footer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-media,
+  .destination-hero,
+  .services-visual,
+  .photo-wall,
+  .restaurant-hero,
+  .parks-feature,
+  .guide-hero,
+  .simple-hero {
+    min-height: auto;
+  }
+
+  .hero-media img,
+  .hero-media video,
+  .destination-hero > img,
+  .services-visual > img,
+  .photo-wall-bg,
+  .restaurant-hero > img,
+  .parks-feature > img,
+  .guide-hero > img,
+  .simple-hero img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .hero-media {
+    overflow: hidden;
+  }
+
+  .site-header,
+  .navbar,
+  .site-footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .nav-links a {
+    white-space: normal;
+  }
+
+  .image-caption {
+    left: 12px;
+    right: 12px;
+  }
+
+  .chat-button {
+    right: 12px;
+    left: auto;
+    width: auto;
+    max-width: calc(100vw - 24px);
+  }
+
+  .site-footer {
+    padding: 26px 16px 70px;
   }
 }
 
