@@ -168,13 +168,22 @@ a {
   cursor: pointer;
 }
 
+.hero-media {
+  position: relative;
+  width: 100%;
+  height: min(55vh, 480px);
+  max-height: 70vh;
+  overflow: hidden;
+}
+
 .hero-media img,
 .hero-media video {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  max-height: 70vh;
-  display: block;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero-media video {
@@ -196,6 +205,7 @@ a {
   height: auto;
   max-height: 60vh;
   object-fit: cover;
+  display: block;
 }
 
 .image-panel::after,
@@ -219,7 +229,7 @@ a {
 
 .image-caption h1 {
   margin: 0 0 10px;
-  font-size: clamp(40px, 7vw, 60px);
+  font-size: clamp(32px, 7vw, 56px);
 }
 
 .image-caption p {
@@ -1335,10 +1345,11 @@ a {
   }
 
   .image-caption {
-    left: 16px;
-    right: 16px;
-    top: 30%;
-    max-width: calc(100% - 32px);
+    left: 12px;
+    right: 12px;
+    top: 28%;
+    max-width: calc(100% - 24px);
+    text-align: left;
   }
 
   .welcome-copy {
@@ -1443,8 +1454,18 @@ a {
   }
 
   .image-caption {
-    left: 24px;
-    right: 24px;
+    left: 12px;
+    right: 12px;
+    top: 30%;
+  }
+
+  .image-caption h1 {
+    font-size: 28px;
+    line-height: 1.05;
+  }
+
+  .image-caption p {
+    font-size: 15px;
   }
 
   .feature-row img,
