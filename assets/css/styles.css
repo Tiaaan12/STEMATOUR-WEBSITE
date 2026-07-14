@@ -168,22 +168,12 @@ a {
   cursor: pointer;
 }
 
-.hero-media {
-  position: relative;
-  width: 100%;
-  height: min(55vh, 480px);
-  max-height: 70vh;
-  overflow: hidden;
-}
-
 .hero-media img,
 .hero-media video {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
+  height: min(52vw, 700px);
+  min-height: 360px;
   object-fit: cover;
-  display: block;
 }
 
 .hero-media video {
@@ -202,10 +192,8 @@ a {
 
 .image-panel img {
   width: 100%;
-  height: auto;
-  max-height: 60vh;
+  height: 600px;
   object-fit: cover;
-  display: block;
 }
 
 .image-panel::after,
@@ -229,7 +217,7 @@ a {
 
 .image-caption h1 {
   margin: 0 0 10px;
-  font-size: clamp(32px, 7vw, 56px);
+  font-size: clamp(40px, 7vw, 60px);
 }
 
 .image-caption p {
@@ -457,8 +445,7 @@ a {
 
 .feature-row img {
   width: 100%;
-  height: auto;
-  max-height: 60vh;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -1345,11 +1332,10 @@ a {
   }
 
   .image-caption {
-    left: 12px;
-    right: 12px;
-    top: 28%;
-    max-width: calc(100% - 24px);
-    text-align: left;
+    left: 16px;
+    right: 16px;
+    top: 30%;
+    max-width: calc(100% - 32px);
   }
 
   .welcome-copy {
@@ -1390,60 +1376,9 @@ a {
   }
 }
 
-@media (max-width: 1024px) {
-  .welcome-section {
-    grid-template-columns: 1fr;
-  }
-
-  .welcome-copy {
-    padding: 32px 24px 8px;
-  }
-
-  .feature-row {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin-bottom: 56px;
-  }
-
-  .feature-row:nth-of-type(even) img {
-    order: 0;
-  }
-
-  .feature-row h3 {
-    font-size: clamp(32px, 6vw, 48px);
-  }
-
-  .parks-list,
-  .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .guide-values {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 560px) {
-  body {
-    font-size: 16px;
-  }
-
   .social-bar {
     justify-content: center;
-  }
-
-  .navbar {
-    gap: 10px;
-  }
-
-  .brand strong,
-  .footer-brand strong {
-    font-size: 17px;
-  }
-
-  .brand small,
-  .footer-brand small {
-    font-size: 11px;
   }
 
   .hero-media img,
@@ -1454,36 +1389,14 @@ a {
   }
 
   .image-caption {
-    left: 12px;
-    right: 12px;
-    top: 30%;
-  }
-
-  .image-caption h1 {
-    font-size: 28px;
-    line-height: 1.05;
-  }
-
-  .image-caption p {
-    font-size: 15px;
+    left: 24px;
+    right: 24px;
   }
 
   .feature-row img,
   .photo-grid img,
   .food-grid img {
     height: 280px;
-  }
-
-  .news-card h3,
-  .news-card p,
-  .card-author {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .parks-list,
-  .team-grid {
-    grid-template-columns: 1fr;
   }
 
   .site-footer nav {
@@ -1497,9 +1410,5 @@ a {
 
   .chat-prompts {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .modal {
-    padding: 18px;
   }
 }
